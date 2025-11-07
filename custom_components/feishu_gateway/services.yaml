@@ -1,0 +1,47 @@
+# Services for Feishu Gateway integration
+
+send_message:
+  name: Send Message
+  description: Send a text message to a Feishu user or group
+  fields:
+    target:
+      name: Target
+      description: The open_id of the recipient (user: ou_xxxxx, group: oc_xxxxx)
+      required: true
+      example: "ou_bb7ed63bd3551a46547cf259a4e49651"
+      selector:
+        text:
+    message:
+      name: Message
+      description: The message content to send
+      required: true
+      example: "Hello from Home Assistant!"
+      selector:
+        text:
+          multiline: true
+    at_list:
+      name: At List
+      description: List of user IDs to @ mention in group messages (optional)
+      required: false
+      example: '["ou_xxxxx", "ou_yyyyy"]'
+      selector:
+        object:
+
+send_image:
+  name: Send Image
+  description: Send an image to a Feishu user or group (not yet implemented)
+  fields:
+    target:
+      name: Target
+      description: The open_id of the recipient (user: ou_xxxxx, group: oc_xxxxx)
+      required: true
+      example: "ou_bb7ed63bd3551a46547cf259a4e49651"
+      selector:
+        text:
+    image_url:
+      name: Image URL
+      description: The URL of the image to send
+      required: true
+      example: "https://example.com/image.jpg"
+      selector:
+        text:

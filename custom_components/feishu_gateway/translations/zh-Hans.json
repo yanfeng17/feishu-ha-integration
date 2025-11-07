@@ -1,0 +1,22 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "配置飞书网关",
+        "description": "设置飞书 Gateway 服务连接",
+        "data": {
+          "base_url": "Gateway 地址",
+          "access_token": "访问令牌（可选）"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "无法连接到 Gateway 服务",
+      "invalid_auth": "访问令牌无效",
+      "unknown": "未知错误"
+    },
+    "abort": {
+      "already_configured": "该 Gateway 已配置"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Home Assistant
+*.log
+*.db
+*.db-shm
+*.db-wal
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/

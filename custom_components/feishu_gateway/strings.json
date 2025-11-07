@@ -1,0 +1,22 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configure Feishu Gateway",
+        "description": "Set up your Feishu Gateway service connection",
+        "data": {
+          "base_url": "Gateway URL",
+          "access_token": "Access Token (optional)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to Gateway service",
+      "invalid_auth": "Invalid access token",
+      "unknown": "Unknown error"
+    },
+    "abort": {
+      "already_configured": "Gateway is already configured"
+    }
+  }
+}
