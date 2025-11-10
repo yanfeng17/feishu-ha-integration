@@ -6,7 +6,7 @@ send_message:
   fields:
     target:
       name: Target
-      description: The open_id of the recipient (user: ou_xxxxx, group: oc_xxxxx)
+      description: "The open_id of the recipient (user: ou_xxxxx, group: oc_xxxxx)"
       required: true
       example: "ou_bb7ed63bd3551a46547cf259a4e49651"
       selector:
@@ -21,7 +21,7 @@ send_message:
           multiline: true
     at_list:
       name: At List
-      description: List of user IDs to @ mention in group messages (optional)
+      description: "List of user IDs to @ mention in group messages (optional)"
       required: false
       example: '["ou_xxxxx", "ou_yyyyy"]'
       selector:
@@ -33,7 +33,7 @@ send_image:
   fields:
     target:
       name: Target
-      description: The open_id of the recipient (user: ou_xxxxx, group: oc_xxxxx)
+      description: "The open_id of the recipient (user: ou_xxxxx, group: oc_xxxxx)"
       required: true
       example: "ou_bb7ed63bd3551a46547cf259a4e49651"
       selector:
